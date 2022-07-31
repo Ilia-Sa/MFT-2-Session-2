@@ -1,0 +1,78 @@
+body{
+  div.wrapper{
+    div.team{
+      width: 100%;
+      background-color: #0ebfdd;
+      >h1{
+        width: 100%;
+        font-size: 44px;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 60px 0;
+        color: #f7fdfe;
+      }
+      >div.content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 40px 0;
+        >div{
+          width: 150px;
+          height: 200px;
+          margin: 0 35px;
+          text-align: center;
+          transition: all 300ms linear;
+          >div{
+            width: inherit;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            >img{
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              transition: all 300ms linear;
+            }
+          }
+          h2{
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #f7fdfe;
+          }
+          h3{
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: normal;
+            color: #f7fdfe;
+          }
+          &:hover>div>img{
+            transform: scale(1.2);
+          }
+        }
+      }
+      >div.bottom{
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding: 60px 0;
+        >span{
+          display: inline-block;
+          width: 180px;
+          height: 40px;
+          line-height: 40px;
+          color: #f7fdfe;
+          border: 2px solid #f7fdfe;
+          border-radius: 25px ;
+          text-transform: uppercase;
+          font-size: 14px;
+          transition: all 300ms linear;
+          &:hover{
+            background-color: #2e9588;
+            color: #f6c7c7;
+            border: 2px solid #2e9588;
+          }
+        }
+      }
+    }
+  }
+}

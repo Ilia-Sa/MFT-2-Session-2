@@ -1,0 +1,29 @@
+body{
+  div.wrapper{
+    >div.about{
+      width: 100%;
+      background: white;
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      >h1{
+        font-size: 44px;
+        color: #0ebfdd;
+        margin-top: 70px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        font-weight: normal;
+        text-align: center;
+      }
+      >p{
+        width: 60%;
+        font-size: 20px;
+        margin-bottom: 70px;
+        padding-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

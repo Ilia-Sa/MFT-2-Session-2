@@ -1,0 +1,100 @@
+body{
+  div.wrapper{
+    >div.footer{
+      width: 100%;
+      >div.map{
+        width: inherit;
+        height: 600px;
+        >img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
+      }
+      >div.back{
+        width: 100%;
+        background-color: #45494d;
+        display: grid;
+        >div.bottom{
+          justify-self: center;
+          width: 70%;
+          display: grid;
+          grid-template-areas:
+      'left right'
+      'bottom bottom';
+          >div.left{
+            grid-area: left;
+            display: grid;
+            grid-template-areas: 'one two three';
+            justify-content: flex-start;
+            align-content: center;
+            grid-gap: 30px;
+            padding: 20px 0;
+            >a{
+              color: #f7fdfe;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-size: 13px;
+              transition: all 300ms linear;
+              &:hover{
+                color: #eb88ff;
+              }
+            }
+          }
+          >div.right{
+            grid-area: right;
+            display: grid;
+            justify-content: flex-end;
+            align-content: center;
+            grid-gap: 10px;
+            grid-template-areas: 'one two three';
+            padding: 20px 0;
+            >a{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              line-height: 40px;
+              text-align: center;
+              text-decoration: none;
+              color: #f7fdfe;
+              border: 1px solid #f7fdfe;
+              transition: all 300ms linear;
+              &:hover{
+                background-color: #f7fdfe;
+                color: #eb88ff;
+              }
+            }
+          }
+          >div.bottomEnd{
+            grid-area: bottom;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            >hr{
+              width: 100%;
+              height: 1px;
+              border: none;
+              background-color: #5a5e62;
+            }
+            >div{
+              padding: 20px 0 ;
+              >span{
+                color: #82868f;
+                border-left: 1px solid #82868f;
+                padding: 0 15px;
+                transition: all 300ms linear;
+                &:hover{
+                  color: #eb88ff;
+                }
+                &:nth-of-type(1){
+                  border-left: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
